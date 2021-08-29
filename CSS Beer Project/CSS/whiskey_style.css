@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Great_Vibes;
+  src: url(../Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(../Ubuntu_Font/Ubuntu-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../Montserrat/Montserrat-Medium.ttf);
+}
+
+/* div.items {
+      background-color: #907163;
+    } */
+
+div.quote {
+  padding: 100px 0;
+}
+
+div.items {
+  background-color: #d2d2d2;
+}
+
+div.quote p {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  font-family: Montserrat;
+}
+
+p.products_title {
+  text-align: center;
+  font-size: 30px;
+  font-family: Ubuntu;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.background {
+  background-image: url("../images/alcohol_background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 750px;
+}
+
+img.logo {
+  width: 110px;
+  height: 70px;
+  margin-left: 28px;
+  display: block;
+}
+
+.nav_header {
+  background-color: #16191c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  margin-top: 35px;
+  float: right;
+}
+.nav ul li {
+  margin-right: 40px;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li:hover {
+  transform: translate(4px, -5px);
+  transition-duration: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: yellow;
+}
+
+.brand_name {
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-family: Great_Vibes;
+}
+
+.itemlist {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+.itemlist li {
+  list-style: none;
+}
+
+p.beer_brand {
+  font-size: 20px;
+}
+
+.itemlist li img {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.itemlist li img:hover {
+  width: 305px;
+  height: 405px;
+}
+
+ul.category {
+  background-color: #e3d09d;
+  width: 300px;
+  position: fixed;
+  top: 20px;
+  display: none;
+}
+
+ul.category li {
+  margin: 3px;
+  text-transform: none;
+  display: block;
+}
+
+ul li.shop:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+ul li.shop {
+  color: aqua;
+}
+
+/* start of dropdown menu of shop */
+ul.category {
+  width: 100px;
+  background: #bdbdbd;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul.category li a {
+  color: black;
+  text-transform: none;
+}
+
+ul.category li a.now {
+  color: aqua;
+}
+ul.category li {
+  margin: 10px;
+  display: block;
+}
+
+.nav ul li:hover ul.category {
+  display: block;
+}
+/* end of dropdwon menu of shop */
+
+/* start of footer design */
+.footer {
+  color: white;
+  background-color: black;
+  height: 60px;
+}
+
+.footer_design {
+  padding: 20px 0 0 50px;
+  float: left;
+}
+
+.footer a {
+  float: right;
+  margin-top: 14px;
+  margin-right: 50px;
+  color: gold;
+}
+
+b.designer {
+  color: gold;
+  font-size: 17px;
+  margin-top: 2px;
+}
+ul li.shop:hover {
+  color: yellow;
+  cursor: pointer;
+}
+/* end of footer design */
+
+.items form input[type="text"] {
+  width: 0px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #d2d2d2;
+  background-image: url("../images/search_icon(1).png");
+  background-position: 4px 4px;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.items form input[type="text"]:focus {
+  width: 100%;
+  outline: none;
+  background-color: #bfc4c7;
+  background-image: url("../images/search_icon.png");
+  cursor: auto;
+}

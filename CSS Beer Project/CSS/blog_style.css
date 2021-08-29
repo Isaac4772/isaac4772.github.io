@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Great_Vibes;
+  src: url(../Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+img.logo {
+  width: 110px;
+  height: 70px;
+  margin-left: 28px;
+  display: block;
+}
+
+.nav_header {
+  background-color: #16191c;
+}
+
+.nav {
+  margin-top: 35px;
+  float: right;
+}
+.nav ul li {
+  margin-right: 40px;
+  display: inline-block;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li:hover {
+  transform: translate(4px, -5px);
+  transition-duration: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: yellow;
+}
+
+.brand_name {
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-family: Great_Vibes;
+}

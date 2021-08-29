@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Shop</title>
+    <link rel="stylesheet" href="CSS/whiskey_style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="fontawesome/js/all.min.js"></script>
+</head>
+
+<body>
+    <header class="nav_header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="shop">Shop
+                    <ul class="category">
+                        <li><a href="beer.html">Beers</a></li>
+                        <li><a href="wine.html">Wine</a></li>
+                        <!-- <li><a href="sake.html">Sake</a></li>
+                        <li><a href="vodka.html">Vodka</a></li> -->
+                        <li><a class="now" href="whiskey.html">Whiskey</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <img class="logo" src="images/logo.png" alt="">
+        <p class="brand_name">Mr. Beer</p>
+    </header>
+    <div class="background"></div>
+    <div class="quote">
+        <p class="fun"></p>
+    </div>
+    <div class="items">
+        <form>
+            <input type="text" name="search">
+        </form>
+        <ul class="itemlist">
+            <li><img src="images/johnnie_walker.jpg" alt="">
+                <p class="beer_brand">Johnnie Walker</p>
+            </li>
+            <li><img src="images/havana_club.jpg" alt="">
+                <p class="beer_brand">Havana Club</p>
+            </li>
+            <li><img src="images/gouden_carolus.jpg" alt="">
+                <p class="beer_brand">Gouden Carolus</p>
+            </li>
+            <li><img src="images/jack_denials.jpg" alt="">
+                <p class="beer_brand">Jack Denials</p>
+            </li>
+            <li><img src="images/jim_beam.jpg" alt="">
+                <p class="beer_brand">Jim Beams</p>
+            </li>
+            <li><img src="images/jagermeister.jpg" alt="">
+                <p class="beer_brand">Jagermeister</p>
+            </li>
+            <li>
+                <img src="images/chivas_regal.jpg" alt="">
+                <p class="beer_brand">Chivas Regal</p>
+            </li>
+            <li>
+                <img src="images/woodford_reserve.jpg" alt="">
+                <p class="beer_brand">Woodford Reserve</p>
+            </li>
+            <li>
+                <img src="images/the_glenlivet.jpg" alt="">
+                <p class="beer_brand">The Glenlivet</p>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p class="footer_design">Designed By <b class="designer">Aung Paing</b></p>
+        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+        <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+    </footer>
+</body>
+<script>
+    let quote1 = `Never delay kissing a pretty girl<br>
+        or opening <br>
+        a bottle of whiskey`
+
+    let quote2 = `Everything will be okay in the end.<br>
+                If it's not okay,<br>
+                Then there's always whiskey`
+
+    let quote3 = `There's no such thing as bad whiskey.<br>
+        Just some whiskey<br>
+        happens to be better than others`
+
+
+    let quote4 = `You can't buy happiness<br>
+        but you can <br>
+        buy whiskey and that's pretty close`
+
+    let quote5 = `I followed my heart and it led me to whiskey`
+
+    let quote6 = `Keep Calm and Drink Whiskey`
+
+    let quote7 = `The glass can be half empty or half full<br>
+        as long as<br>
+        there's whiskey in it`
+
+    let quote8 = `What whiskey will not cure<br>
+        there is no cure for`
+
+    let quote9 = `Rather to be someone's<br>
+        shot of whiskey<br>
+        than everybody's cup of tea`
+
+    let quote10 = `There's always time for a glass of whiskey`
+
+    let quotelist = [quote1, quote2, quote3, quote4, quote5, quote6, quote7, quote8, quote9, quote10];
+
+    let randomQuote = quotelist[Math.floor(Math.random() * quotelist.length)];
+    console.log(randomQuote);
+    document.querySelector(".fun").innerHTML = randomQuote;
+</script>
+
+</html>

@@ -1,0 +1,254 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: Great_Vibes;
+  src: url(../Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+.nav_background {
+  background-color: #16191c;
+}
+
+.logo {
+  width: 110px;
+  height: 70px;
+  display: block;
+  margin-left: 30px;
+}
+
+.brand_name {
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-family: Great_Vibes;
+}
+
+.nav_brand {
+  display: block;
+}
+
+.nav_background ul {
+  float: right;
+}
+
+.nav_background ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav_background ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.nav_background ul li:hover {
+  transform: translate(4px, -5px);
+  transition-duration: 0.3s;
+}
+
+.nav_background ul li a:hover {
+  color: yellow;
+}
+
+.nav_background ul li.shop a:hover {
+  color: black;
+}
+
+.nav_brand ul li a.now {
+  color: aqua;
+}
+
+.nav_background {
+  background-image: url(../images/background.jpg);
+  height: 100vh;
+}
+
+.beerbar {
+  position: absolute;
+  top: 300px;
+  left: 370px;
+  color: gold;
+  font-size: 40px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+.fontstyle {
+  font-family: Great_Vibes;
+}
+
+div.grid_body {
+  display: grid;
+  grid-template-columns: 600px auto auto;
+  background-color: #212121;
+  height: 350px;
+  text-align: center;
+}
+
+div.grid_one {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 70px 90px 0 90px;
+  text-align: justify;
+}
+
+div.grid_body div {
+  background-color: black;
+  color: white;
+  border: 4px solid #212121;
+}
+
+.perfect {
+  color: gold;
+}
+
+.readmore {
+  background-color: gold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+div.grid_body div.grid_other {
+  padding-top: 35px;
+}
+
+div.boxshow_img img {
+  width: 500px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-left: 97px;
+  float: left;
+}
+
+div.boxshow_img .boxshow_text {
+  position: relative;
+  top: 150px;
+  left: 80px;
+  width: 80%;
+  text-align: justify;
+}
+
+.clear {
+  clear: both;
+}
+
+.aisle {
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+  height: 380px;
+}
+
+div.aisle .aisle_text {
+  padding: 90px 60px 10px 100px;
+  width: 30%;
+  float: left;
+  text-align: justify;
+}
+
+div.aisle img {
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+div.beerbar button,
+.readmore {
+  cursor: pointer;
+}
+
+h2.beer_aisle {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+div.whitebody {
+  margin-top: 100px;
+}
+
+div.whitebody_left {
+  float: left;
+  width: 35%;
+  padding: 0px 100px 30px 170px;
+  text-align: justify;
+}
+
+div.whitebody_right {
+  width: 80%;
+  padding: 0px 100px 30px 120px;
+  text-align: justify;
+}
+
+.header {
+  margin: 5px 0;
+}
+
+/* start of footer design */
+.footer {
+  color: white;
+  background-color: black;
+  height: 60px;
+  margin-top: 60px;
+}
+
+.footer_design {
+  padding: 20px 0 0 50px;
+  float: left;
+}
+
+.footer a {
+  float: right;
+  margin-top: 14px;
+  margin-right: 50px;
+  color: gold;
+}
+
+b.designer {
+  color: gold;
+  font-size: 17px;
+  margin-top: 2px;
+}
+ul li.shop:hover {
+  color: yellow;
+  cursor: pointer;
+}
+/* end of footer design */
+
+/* start of dropdown menu of shop */
+ul.category {
+  width: 100px;
+  background: #bdbdbd;
+  display: none;
+  position: fixed;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+}
+
+ul.category li a {
+  color: black;
+  text-transform: none;
+}
+
+ul.category li {
+  margin: 10px;
+  display: block;
+}
+
+.nav_brand ul li:hover ul.category {
+  display: block;
+}
+/* end of dropdwon menu of shop */

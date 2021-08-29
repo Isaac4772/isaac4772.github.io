@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Great_Vibes;
+  src: url(../Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../Montserrat/Montserrat-Medium.ttf);
+}
+
+img.logo {
+  width: 110px;
+  height: 70px;
+  margin-left: 28px;
+  display: block;
+}
+
+.nav_header {
+  background-color: #16191c;
+}
+
+.nav {
+  margin-top: 35px;
+  float: right;
+}
+.nav ul li {
+  margin-right: 40px;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li:hover {
+  transform: translate(4px, -5px);
+  transition-duration: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: yellow;
+}
+
+.brand_name {
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-family: Great_Vibes;
+}
+
+/* start of dropdown menu of shop */
+ul.category {
+  width: 100px;
+  background: #bdbdbd;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul.category li a {
+  color: black;
+  text-transform: none;
+}
+
+ul.category li {
+  margin: 10px;
+  display: block;
+}
+
+.nav ul li:hover ul.category {
+  display: block;
+}
+
+ul li.shop:hover {
+  color: yellow;
+  cursor: pointer;
+}
+/* end of dropdwon menu of shop */
+
+.background {
+  background-image: url(../images/contact_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
+
+div.background > p {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: Montserrat;
+}
+
+div.contact {
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-column-gap: 30px;
+}
+
+div.contact div {
+  background-color: white;
+  height: 400px;
+}
+
+div.contact p {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+div.contact img {
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+}
+
+div.contact p.title {
+  color: white;
+  font-size: 20px;
+  font-family: Montserrat;
+  margin-bottom: 10px;
+}
+
+.map {
+  background-color: #d2d2d2;
+  margin-top: 310px;
+  height: 490px;
+}
+
+.map iframe {
+  float: left;
+  padding: 20px 10px;
+}
+
+/* start of footer design */
+.footer {
+  color: white;
+  background-color: black;
+  height: 60px;
+  width: 100%;
+}
+
+.footer_design {
+  padding: 20px 0 0 50px;
+  float: left;
+}
+
+.footer a {
+  float: right;
+  margin-top: 14px;
+  margin-right: 50px;
+  color: gold;
+}
+
+b.designer {
+  color: gold;
+  font-size: 17px;
+  margin-top: 2px;
+}
+
+/* end of footer design */
+
+.clear {
+  clear: both;
+}
+
+.form {
+  margin-left: 800px;
+  margin-top: 10px;
+}
+
+.map > p {
+  font-size: 30px;
+  margin-left: 955px;
+  font-family: Montserrat;
+  padding-top: 20px;
+}
+
+.form input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  margin-top: 30px;
+  width: 60%;
+  background-color: white;
+  border: hidden;
+  outline: none;
+  transition: 0.3s;
+}
+
+textarea {
+  width: 63%;
+  margin-top: 30px;
+  height: 200px;
+  border: hidden;
+  transition: 0.3s;
+}
+
+form input[type="text"]:focus,
+input[type="email"]:focus {
+  padding: 12px;
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+  padding: 2px;
+}
+
+textarea[placeholder] {
+  font-size: 17px;
+}
+
+form input[type="submit"] {
+  padding: 7px 10px;
+  background-color: #16191c;
+  color: white;
+  border: hidden;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  padding: 8px 11px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:active {
+  padding: 9px 12px;
+  background-color: #0267eb;
+}
+
+.nav ul li a.now {
+  color: aqua;
+}
