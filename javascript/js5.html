@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS Condition if/else</h1>
+    <script>
+        function quantity() {
+            var unitPrice = 200;
+            var quantity = parseInt(prompt("Enter quantity"));
+            if (quantity >= 100) {
+                unitPrice = 180;
+            }
+
+            var total = quantity * unitPrice;
+            alert(`Total price for ${quantity} is ${total}`);
+        }
+
+        even_odd();
+        function even_odd() {
+            var num = parseInt(prompt("Enter a number"));
+            if (num % 2 == 0) {
+                alert("even");
+            }
+            else {
+                alert("odd");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+    }
+
+    th {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    tr:hover {
+        background-color: rgb(243, 59, 13);
+        color: white;
+    }
+</style>
+
+
+
+<script>
+
+
+    var objectOne = { name: 'MgMg', age: 18, city: 'Ygn' }
+    var objectTwo = { name: 'AungAung', age: 19, city: 'Ygn' }
+    var objectThree = { name: 'Kaung', age: 19, city: 'Ygn' }
+
+    var studentData = [objectOne, objectTwo, objectThree,];
+
+
+
+    window.onload = () => {
+        loadTable(studentData);
+    };
+    loadTable(studentData);
+    function loadTable(studentData) {
+        const tableBody = document.getElementById('tableData');
+        let dataHtml = '';
+        for (var student of studentData) {
+
+            dataHtml += ` <tr>
+               <td>
+                ${student.name}
+               </td>
+               <td>
+                ${student.age}
+               </td>
+               <td>
+                ${student.city}
+               </td>
+           </tr>
+           
+`;
+
+
+
+
+        }
+
+        tableBody.innerHTML += dataHtml;
+
+    }
+
+
+</script>
+
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>age</th>
+                <th>city</th>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+
+        </tbody>
+    </table>
+</body>
+
+</html>

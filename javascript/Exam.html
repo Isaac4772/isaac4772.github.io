@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+</head>
+
+<body>
+    <h1>Exam Result</h1>
+    <Label for="subject1">Subject</Label>
+    <input type="number" id="subject1"> <br>
+    <Label for="subject2">Subject</Label>
+    <input type="number" id="subject2"> <br>
+    <Label for="subject3">Subject</Label>
+    <input type="number" id="subject3"> <br>
+    <button onclick="show()">Calculate</button>
+    <br>
+    Total: <label id="total"></label>
+    <br>
+    <label id="result"></label>
+
+    <script>
+        function show() {
+            // accenpt input of 3 subjects
+            var subject1 = parseInt(document.getElementById("subject1").value);
+            var subject2 = parseInt(document.getElementById("subject2").value);
+            var subject3 = parseInt(document.getElementById("subject3").value);
+            console.log(subject1, subject2, subject3);
+            // calculate the total of subjects
+            var total = subject1 + subject2 + subject3;
+            var result;
+            document.getElementById("total").innerHTML = total;
+            if (subject1 < 40 || subject2 < 40 || subject3 || 40)
+                result = "Failed";
+            else
+                result = "Passed";
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

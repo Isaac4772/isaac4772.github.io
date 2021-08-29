@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+
+    <fieldset>
+        <legend>Personal Info</legend>
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="34">
+            <input type="text" name="name" placeholder="Your Name" minlength="3" maxlength="10"><br>
+            <textarea name="address" id="" cols="30" rows="10"></textarea>
+            <br>
+
+            Interests: <br>
+            <input type="checkbox" name="php" value="php" id="php" checked="checked"> <Label for="php">PHP</Label>
+            <input type="checkbox" name="html" value="html" id="html" checked="checked"> <label for="html">HTNL</label>
+            <input type="checkbox" name="css" value="css" id="css" checked="checked"> <label for="css">CSS</label>
+    </fieldset>
+
+    Gender : <br>
+    <input type="radio" name="gender" id="female" value="female"> <label for="female"> female </label><br>
+    <input type="radio" name="gender" id="male" value="male"> <label for="male"> male </label><br>
+
+    Education: <br>
+    <select name="Education" multiple="multiple" id="">
+        SelectEducation:
+        <option value="1">B.A</option>
+        <option value="2">B.Sc</option>
+        <option value="3" selected="selected">B.C.Sc</option>
+    </select><br>
+
+    Photo: <br>
+    <input type="file" name="photo" id=""><br>
+    <Label>Age</Label>
+    <input type="number" name="age" id="" required="required"><br>
+    <input type="number" name="height" id="" step="0.01"><br>
+    <input type="range" name="income" min="0" max="100" value>
+    <input type="date" name="dateofbirth" id=""><br>
+    <input type="submit" value="register">
+    <input type="reset" value="Clear">
+    </form>
+</body>
+
+</html>

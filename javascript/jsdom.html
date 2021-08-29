@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <h4>JS Image Slider</h4>
+    <img src="1.png" id="myimg" onmouseenter="big()" onmouseout="normal()" width="200" height="150">
+
+    <script>
+        function big() {
+            let myimg = document.getElementById('myimg');
+            myimg.style.width = '600px';
+            myimg.style.height = '450px';
+        }
+
+        function normal() {
+            let myimg = document.getElementById('myimg');
+            myimg.style.width = '200px';
+            myimg.style.height = '150px';
+            change();
+        }
+
+        function change() {
+            let myimg = document.getElementById('myimg');
+            let mysrc = myimg.getAttribute('src');
+            console.log(mysrc);
+
+            if (mysrc == '1.png') {
+                myimg.src = '2.png';
+            } else if (mysrc == '2.png') {
+                myimg.src = '3.png';
+            } else {
+                myimg.src = '1.png';
+            }
+        };
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>JS Variable data type</h1>
+    <!--Bruh-->
+    <script>
+      var firstNumber = 22; //assignment operator "="
+      document.write(firstNumber);
+      var secondNumber = 45; //assign
+      var thirdNumber = firstNumber + secondNumber;
+      document.write("br" + thirdNumber);
+      document.write(
+        "<br> Sum of " +
+          firstNumber +
+          " and " +
+          secondNumber +
+          ": " +
+          thirdNumber
+      );
+      var fourthNumber = firstNumber - secondNumber;
+      document.write("<br> Sub of 22 and 45: " + fourthNumber);
+      var fifthNumber = firstNumber * secondNumber;
+      document.write("<br> Multiplication of 22 and 45: " + fifthNumber);
+      var sixthNumber = firstNumber / secondNumber;
+      document.write("<br> Division of 22 and 45: " + sixthNumber);
+      var seventhNumber = firstNumber * secondNumber;
+      document.write("<br> Modulus of 22 and 45: " + seventhNumber);
+
+      console.log(typeof firstNumber);
+      console.log(typeof sixthNumber);
+
+      //String data type
+      var firstName = "Aung";
+      var lastName = "Paing";
+      console.log(typeof firstName);
+      var fullName = firstName + " " + lastName;
+      console.log(fullName);
+
+      //boolean data type
+      var single = true;
+      var over18 = true;
+      console.log(typeof single);
+
+      //null data type
+      var age = null;
+      console.log(age);
+
+      //array data type
+      var fruits = ["banana", "mango", "orange"];
+      console.log(typeof fruits);
+      console.log(fruits);
+
+      var students = ["Mg Mg", 23, 16, 45, "Aung Aung"];
+      console.log(students[3]);
+
+      //object
+      var studentsObj = {
+        name: "Mg Mg",
+        age: 23,
+        height: 5.6,
+        city: "Yangon",
+      };
+
+      var item1 = {
+        id: 1,
+        name: "CoffeeMix",
+        price: 2300,
+        quantity: 3,
+      };
+
+      var item2 = {
+        id: 2,
+        name: "Bread",
+        price: 1300,
+        quantity: 2,
+      };
+
+      var item3 = {
+        id: 3,
+        name: "Cake",
+        price: 2000,
+        quantity: 5,
+      };
+      var cart = [item1, item2, item3];
+      //cart.push(items1,item2,item3);
+      console.log(studentsObj.name);
+      console.log(studentsObj["name"]);
+      console.log(cart);
+    </script>
+  </body>
+</html>

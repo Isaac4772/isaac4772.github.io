@@ -1,0 +1,340 @@
+/*h2,
+h1,
+h4 {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+}*/
+span {
+  word-spacing: 15px;
+  line-height: 25px;
+}
+
+/*universal selector*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*attribute selector*/
+a[target="_blank"] {
+  color: blue;
+}
+
+a[title="google"] {
+  text-decoration: none;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: burlywood;
+}
+
+a:active {
+  color: chartreuse;
+}
+
+a:visited {
+  color: deeppink;
+}
+
+p#idselector {
+  color: blueviolet;
+  letter-spacing: 5px;
+}
+
+.classone {
+  color: darkseagreen;
+  text-indent: 50px;
+}
+
+p.desc a {
+  color: red;
+}
+
+p.child > a {
+  color: green;
+}
+
+div:target {
+  color: red;
+  border: 1px solid black;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  outline: none;
+  border: 2px solid #ccc;
+  background-color: gray;
+  padding: 10px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+  border: 3px solid blueviolet;
+  background-color: white;
+  border-radius: 5px;
+}
+
+div.dob_select {
+  width: 90%;
+}
+
+div.dob_select select {
+  width: 30%;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="radio"]:checked + label {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+#address {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  border: 2px solid #555;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:enabled + label {
+  color: yellow;
+  font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+  color: aqua;
+  font-style: normal;
+}
+
+input[type="checkbox"]:disabled + label {
+  color: red;
+  font-style: normal;
+}
+
+fieldset.rules legend {
+  color: white;
+  background-color: cadetblue;
+  margin: 30px 0px;
+}
+
+ul li {
+  width: 80px;
+  margin-left: 50px;
+}
+
+/*p {
+  text-indent: 50px;
+  margin-bottom: 40px;
+}*/
+
+li:first-child {
+  background-color: red;
+}
+
+li:last-child {
+  background-color: yellow;
+}
+
+li:nth-child(3) {
+  background-color: tomato;
+}
+
+p:empty {
+  background-color: violet;
+  height: 20px;
+}
+
+p.thankyou {
+  text-align: center;
+}
+
+.borderone {
+  border: 1px dashed cyan;
+}
+
+.bordertwo {
+  border-top: 1px solid red;
+}
+
+.borderthree {
+  border: 1px solid salmon;
+  border-radius: 20px;
+}
+
+.borderstyle {
+  border-style: ridge;
+}
+
+.stylemix {
+  border-style: solid dashed dotted double;
+  /*top right bottom left (clock rise)*/
+  border-style: solid double;
+  /*topandbottom / leftandright*/
+  border-style: solid double dotted;
+  /*top / left and right / bottom*/
+}
+
+.marginone {
+  border: 1px solid blueviolet;
+  margin: 15px;
+  /*top right bottom left*/
+}
+
+.margintwo {
+  border: 1px solid blueviolet;
+  margin: 10px 2%;
+  /*topandbottom / leftandright*/
+}
+
+.marginthree {
+  border: 1px solid blueviolet;
+  margin: 10px 5px 15px;
+  /*top right bottom left*/
+}
+
+.marginfour {
+  border: 1px solid blueviolet;
+  /*margin: 10px 5px 20px 40px;*/
+  margin-top: 40px;
+}
+
+.padding {
+  border: 1px solid blueviolet;
+  padding: 10px;
+}
+
+a.google,
+a.facebook {
+  border: 1px solid blueviolet;
+  display: inline-block;
+  width: 600px;
+}
+
+div.floatleft img {
+  width: 40%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+div.floatright img {
+  width: 40%;
+  float: right;
+}
+
+/*Grid*/
+div.gridone div,
+div.gridtwo div,
+div.gridthree div,
+div.gridfour div,
+div.gridfive div,
+div.gridsix div {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.gridone,
+.gridtwo,
+.gridthree,
+.gridfour,
+.gridfive,
+.gridsix {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.gridtwo {
+  grid-column-gap: 40px;
+}
+
+.gridthree {
+  grid-row-gap: 40px;
+}
+
+.gridfour {
+  grid-gap: 40px;
+}
+
+.gridfive .one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.gridsix .two {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.relative_parent {
+  border: 1px solid blueviolet;
+  width: 1000px;
+  height: 500px;
+}
+
+.relative_parent .relative {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  top: 300px;
+  left: 300px;
+  border: 1px solid black;
+}
+
+.absolute_parent {
+  position: relative;
+  border: 1px solid red;
+  width: 1000px;
+  height: 500px;
+}
+
+.absolute_parent .absolute {
+  position: absolute;
+  border: 1px solid green;
+  top: 40px;
+  left: 300px;
+}
+
+.tofixed {
+  position: fixed;
+  top: 100px;
+  left: 250px;
+  width: 100px;
+}
+
+.onlinefont {
+  font-family: "Oswald", sans-serif;
+}
+
+@font-face {
+  src: url(Bebas_Neue/BebasNeue-Regular.ttf);
+  font-family: Bebas_Neue;
+}
+
+.offlinefont {
+  font-family: Bebas_Neue;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+}

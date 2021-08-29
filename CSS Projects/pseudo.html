@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesudo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body style="background-color: gray">
+    <h2>Student Register</h2>
+    <form>
+      <label for="name">Name</label><br />
+      <input
+        type="text"
+        placeholder="Enter your Full Name"
+        id="name"
+      /><br /><br />
+      <label for="fatherName">Father's Name</label><br />
+      <input
+        type="text"
+        placeholder="Enter your father's full name"
+      /><br /><br />
+      <label for="Phone">Phone</label><br />
+      <input type="number" placeholder="09*********" /><br /><br />
+      <label>Date of Birth</label>
+      <div class="dob_select">
+        <select>
+          <option>Day</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+
+        <select>
+          <option>Month</option>
+          <option>January</option>
+          <option>Febuary</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+        </select>
+
+        <select>
+          <option>Year</option>
+          <option>1993</option>
+          <option>1994</option>
+          <option>1995</option>
+          <option>1996</option>
+          <option>1997</option>
+        </select>
+      </div>
+      <br /><br />
+
+      <label for="email">Email</label><br />
+      <input type="email" id="email" placeholder="example@gmail.com" />
+      <br /><br />
+
+      <label>Gender</label><br />
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+      <br /><br />
+      <label for="address">Address</label><br />
+      <textarea name="" id="address" cols="30" rows="10"></textarea>
+      <br /><br />
+      <label>Qualification</label>
+      <div>
+        <input type="checkbox" id="high" />
+        <label for="high">High School (10th)</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="higher" disabled= />
+        <label for="higher">Higher School (12th)</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="gra" />
+        <label for="gra">Graduation (Bachelor)</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="pogra" />
+        <label for="pogra">Post Graduation (Master)</label>
+      </div>
+
+      <fieldset class="rules">
+        <legend>Rules</legend>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi,
+          recusandae laboriosam reiciendis error qui maxime exercitationem
+          provident perspiciatis corporis quod? Nihil quasi officiis minima
+          ipsam magnam, repudiandae repellendus. Architecto, illum.
+        </p>
+        <ul>
+          <li>This is first rule</li>
+          <li>This is second rule</li>
+          <li>This is thord rule</li>
+          <li>This is fourth rule</li>
+          <li>This is fifth rule</li>
+          <li>This is sixth rule</li>
+        </ul>
+      </fieldset>
+      <p></p>
+      <p class="thankyou">Thank You</p>
+      <p></p>
+    </form>
+  </body>
+</html>

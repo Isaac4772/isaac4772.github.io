@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*change the background of h1+navgitation*/
+.header {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 23px;
+  font-size: 20px;
+}
+
+.nav {
+  float: right;
+}
+
+.link a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.link a:hover {
+  color: black;
+  transition-duration: 0.3s;
+}
+
+.link a:active {
+  color: rgb(232, 248, 10);
+  font-size: 21px;
+  transition-duration: 0.1s;
+}
+
+.background {
+  background-image: url("../img/PageBackground.jpg  ");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+  width: 100%;
+  height: 100vh;
+  filter: blur(2px);
+}
+
+.furnitures li {
+  width: 210px;
+  height: 213px;
+  display: inline;
+  float: right;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+
+.furnitures {
+  position: absolute;
+  top: 200px;
+  margin-left: 500px;
+  margin-right: 10px;
+}
+
+.furnitures li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  box-shadow: 0 8px 6px -6px black;
+}
